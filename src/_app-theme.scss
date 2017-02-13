@@ -1,0 +1,31 @@
+@import '~@angular/material/core/theming/theming';
+@import './styles/typography-theme';
+@import './app/header/header-theme';
+
+
+// Styles for the docs app that are based on the current theme.
+@mixin portfolio-app-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  .portfolio-app-background {
+    background: md-color($background, background);
+  }
+
+  .portfolio-primary-header {
+    background: md-color($primary);
+
+    h1 {
+      color: md-color($primary, default-contrast);
+    }
+  }
+
+  .portfolio-footer {
+    background: md-color($primary);
+    color: md-color($primary, default-contrast);
+  }
+  @include app-header-theme($theme);
+}
