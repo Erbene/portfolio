@@ -1,0 +1,17 @@
+.example-card {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+}
+.md-tab-list {
+  display:flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-container {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}

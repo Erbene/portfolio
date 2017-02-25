@@ -1,6 +1,7 @@
 @import '~@angular/material/core/theming/all-theme';
 @import './app-theme';
 @import './app/header/header.component';
+@import './app/navigation/navigation.component';
 
 // Include material core styles.
 @include md-core();
